@@ -1,54 +1,22 @@
-<p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby minimal starter
-</h1>
+# Gatsby + Tailwind Starter
+
+## Description
+
+This project extends the [Gatsby quick start project](https://www.gatsbyjs.com/docs/quick-start/) and includes [Tailwind](https://tailwindcss.com/) for styling (both PostCSS and CSS-in-JS options). Refer to the [Gatsby Tailwind CSS docs](https://www.gatsbyjs.com/docs/how-to/styling/tailwind-css/) for more info around setup.
 
 ## 🚀 Quick start
 
-1.  **Create a Gatsby site.**
+- To get started, install packages with `npm install` then `npm run develop`
+- Your site should now be running at http://localhost:8000
 
-    Use the Gatsby CLI to create a new site, specifying the minimal starter.
+## Styling Options
 
-    ```shell
-    # create a new Gatsby site using the minimal starter
-    npm init gatsby
-    ```
+You can choose to use either PostCSS or CSS-in-JS via `twin.macro` for styling. Make sure you uninstall the packages that you are not using.
 
-2.  **Start developing.**
+1. PostCSS uses className to apply Tailwind utility classes, i.e:
 
-    Navigate into your new site’s directory and start it up.
+```html
+<div className="flex flex-col justify-center ...">...</div>
+```
 
-    ```shell
-    cd my-gatsby-site/
-    npm run develop
-    ```
-
-3.  **Open the code and start customizing!**
-
-    Your site is now running at http://localhost:8000!
-
-    Edit `src/pages/index.js` to see your site update in real-time!
-
-4.  **Learn more**
-
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Tutorials](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Guides](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-## 🚀 Quick start (Gatsby Cloud)
-
-Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cloud/):
-
-[<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/gatsbyjs/gatsby-starter-minimal)
+2. CSS-in-JS uses Emotion and the twin.macro library. Refer to `src/index.js` for a working example.
