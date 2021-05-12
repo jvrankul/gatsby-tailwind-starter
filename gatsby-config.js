@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: "dd-federation",
+    title: 'dd-federation',
   },
-  plugins: [],
+  plugins: [`gatsby-plugin-postcss`, `gatsby-plugin-emotion`],
 };
